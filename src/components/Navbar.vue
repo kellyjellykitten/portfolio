@@ -1,15 +1,21 @@
 <template>
-    <header class="masthead mb-auto">
-        <div class="inner">
-            <h3 class="masthead-brand">Kelly Lloyd</h3>
-            <nav class="nav nav-masthead justify-center">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Resume</a>
-                <a class="nav-link" href="#">Projects</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+        <a class="navbar-brand mb-0 h1" href="#">Kelly Lloyd</a>
+        <div class="navbar-nav mr-auto" id="navbarText">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
-            </nav>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
         </div>
-    </header>
+    </nav>
 </template>
 
 <script>
@@ -17,3 +23,9 @@ export default {
     name: 'Navbar'
 }
 </script>
+
+<style type="text/css">
+  a:hover {
+    cursor: pointer;
+  }
+</style>
