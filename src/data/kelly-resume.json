@@ -69,6 +69,18 @@
             ]            
         }
     ],
+    "skills": [
+        { "name": "JavaScript", "category": "Languages", "image_url": "js.png" },
+        { "name": "Python", "category": "Languages", "image_url": "python.png" },
+        { "name": "PostgreSQL", "category": "Databases", "image_url": "postgresql.png" },
+        { "name": "Vue.js", "category": "Frameworks and Libraries", "image_url": "vuejs.png" },
+        { "name": "Git", "category": "Development Tools", "image_url": "git.png" },        
+        { "name": "Visual Studio Code", "category": "Development Tools", "image_url": "vscode.png" },        
+        { "name": "Sublime Text Editor", "category": "Development Tools", "image_url": "sublime.png" },
+        { "name": "AWS", "category": "Other", "image_url": "aws.png" },
+        { "name": "Netlify", "category": "Other", "image_url": "netlify.png" }
+        
+    ],
     "projects": [
 		{
 			"name": "Photo Caption Contest",

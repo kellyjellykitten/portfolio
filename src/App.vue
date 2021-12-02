@@ -16,7 +16,7 @@
           </li>
           <!-- Education -->
           <li class="nav-item">
-            <a class="link" href="#education">Education</a>
+            <a class="link" href="#education">Education &amp; Skills</a>
           </li>
           <!-- Projects -->
           <li class="nav-item">
@@ -30,7 +30,7 @@
       <br>
       <Experience id="experience" v-if="data.experience" :experience="data.experience" />
       <br>
-      <Education id="education" v-if="data.education" :schools="data.education" />
+      <Education id="education" v-if="data.education" :schools="data.education" :skills="data.skills" />
       <br>
       <Projects id="projects" v-if="data.projects" :projects="data.projects" />
     </main>
