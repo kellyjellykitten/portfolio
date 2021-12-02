@@ -1,0 +1,82 @@
+{
+    "firstname": "Kelly",
+    "lastname": "Lloyd",
+    "email": "kellybackwards@gmail.com",
+    "location": "Gainesville, FL",
+    "phone": "(352) 682-1895",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1208961?s=460&v=4",
+    "github": "https://github.com/kellyjellykitten",
+    "linkedin": "https://www.linkedin.com/in/kellyalloyd/",
+    "summary": "I am Teal'c from the planet Chulak with 100 years experience.",
+    "education": [
+        {
+            "school": "University of Florida",
+            "degree": "Bachelor of Arts",
+            "major": "English",
+            "start": "June 2012",
+            "end": "August 2016"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Florida Title & Guarantee Agency (Watermark Realty)",
+            "roles": [
+                {
+                    "job": "Title Closing Processor and Licensed Title Agent",
+                    "start": "Fall 2019",
+                    "end": "Summer 2020",
+                    "tasks": [
+                        "Opened files for each new transaction, cash or finance, ordering both title and municipal lien searches.",
+                        "Worked as part of a team consisting of both in-person co-workers and remote co-workers.",
+                        "Examined title of  subject properties and worked on clearing every closing requirement needed for each, including titles to properties in probate, properties with open permits/city liens, and other complex situations.",
+                        "Assisted and facilitated residential real estate closings, including e-closings."
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Gainesville Title, PLLC, A Law Firm",
+            "roles": [
+                {
+                    "job": "Legal Assistant to Patrick Dodds, Esq.",
+                    "start": "Summer 2018",
+                    "end": "Fall 2019",
+                    "tasks": [
+                        "Designed and implemented a company workflow that greatly increased efficiency in the handling of files. ",
+                        "Managed and maintained said workflow and was instrumental in the day-to-day operations of the firm.", 
+                        "Reviewed real estate closing contracts and created the file in our software, including ordering title search.",
+                        "Cleared title deficiencies, including ordering estoppel letters, payoff statements, and surveys.",
+                        "Recorded warranty deeds, affidavits, mortgages, etc. in the Official Records through e-file."
+                    ]
+                }
+            ]                
+        },
+        {
+            "company": "Robert J. Warren, P.A.",
+            "roles": [
+                {
+                    "job": "Legal Assistant to Robert J. Warren, Esq.",
+                    "start": "Summer 2017",
+                    "end": "Summer 2018",
+                    "tasks": [
+                        "Executed title work pertaining to real estate closings, including ordering title and clearing title deficiencies.",
+                        "Collaborated with mortgage lenders to reconcile final settlement statements for real estate closings.",
+                        "Maintained consistent communication with clients to ensure excellent customer service.",
+                        "Processed screening and intake of bankruptcy clients and started their file in BestCase software.",
+                        "Sat face-to-face with clients to guide them through their Chapter 7 bankruptcy petitions."
+                    ]
+                }
+            ]            
+        }
+    ],
+    "projects": [
+		{
+			"name": "Photo Caption Contest",
+            "start": "? 2021",
+            "description": "A Vue.js web application...",
+            "source": "tbd",
+            "website": "tbd",
+            "preview_url": "canvas-pixel-color-counter.gif"
+		}
+    ]
+}

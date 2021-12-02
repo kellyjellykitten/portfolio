@@ -1,13 +1,13 @@
 <template>
     <div class="container">
-        <h1>Resume</h1>
-        <p>This is where I'd put my experience...IF I HAD ANY!</p>
+        <h1>edu</h1>
+        <p>...IF I HAD ANY!</p>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'Resume'
+  name: 'Education'
 }
 </script>
 
