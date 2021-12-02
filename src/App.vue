@@ -121,13 +121,18 @@ export default {
   }
   h2 {
     margin-top: 45px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 130%;
   }
   h3, h4 {
     margin: 5px 0;
   }
   h4 {
-    color: gray;
-    font-weight: 200;
+    color: rgb(100, 104, 122);
+    font-size: 115%;
+    /* font-weight: 200; */
   }
   .avatar {
     border-radius: 50%;
@@ -139,7 +144,8 @@ export default {
     height: 200px;
   }
    .date-range {
-    color: var(--main-color);
+    /* color: var(--main-color); */
+    font-size: 100%;
   }
   .fullsize-navbar  {
     padding-bottom: 2rem;

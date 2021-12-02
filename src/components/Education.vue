@@ -11,11 +11,11 @@
         <h2>Skills</h2>
         <section>
             <div class="category-group" v-for="(skills, category) in categories" :key="category.id">
-                <h4>{{ category }}</h4>
+                <h3>{{ category }}</h3>
                 <div class="skill-container">
                     <section class="skill-card" v-for="skill in skills" :key="skill.id">
                         <div class="image-container">
-                            <img :src="'assets/' + skill.image_url" :alt="skill.name">
+                            <a :href="skill.url" :title="skill.title" target="_blank"><img :src="'assets/' + skill.image_url" :alt="skill.name"></a>
                         </div>
                         <h5>{{ skill.name }}</h5>             
                     </section>
@@ -62,6 +62,7 @@
 <style>
     h5 {
         font-weight: normal;
+        font-size: 17px;
         margin: 5px;
     }
     .category-group {
@@ -79,11 +80,11 @@
     .skill-card {
         /* border-radius: 3px;
         border: 1px solid midnightblue; */
-        margin: 5px;
+        margin: 7px;
         word-wrap: break-word;
-        width: 105px;
-        display: flex;
-        flex-direction: column;
+        width: 120px;
+        /* display: flex;
+        flex-direction: column; */
         justify-content: space-between;
     }
     .image-container {

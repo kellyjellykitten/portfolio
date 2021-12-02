@@ -70,22 +70,52 @@
         }
     ],
     "skills": [
-        { "name": "JavaScript", "category": "Languages", "image_url": "js.png" },
-        { "name": "Python", "category": "Languages", "image_url": "python.png" },
-        { "name": "PostgreSQL", "category": "Databases", "image_url": "postgresql.png" },
-        { "name": "Vue.js", "category": "Frameworks and Libraries", "image_url": "vuejs.png" },
-        { "name": "Git", "category": "Development Tools", "image_url": "git.png" },        
-        { "name": "Visual Studio Code", "category": "Development Tools", "image_url": "vscode.png" },        
-        { "name": "Sublime Text Editor", "category": "Development Tools", "image_url": "sublime.png" },
-        { "name": "AWS", "category": "Other", "image_url": "aws.png" },
-        { "name": "Netlify", "category": "Other", "image_url": "netlify.png" }
+        { "name": "JavaScript", "category": "Languages", "image_url": "js.png", "title": "JS Documentation", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+        { "name": "Python", "category": "Languages", "image_url": "python.png", "title": "Python Documentation", "url": "https://docs.python.org/3/" },
+        { "name": "PostgreSQL", "category": "Databases", "image_url": "postgresql.png", "title": "PostgreSQL Documentation", "url": "https://www.postgresql.org/docs/" },
+        { "name": "Vue.js", "category": "Frameworks and Libraries", "image_url": "vuejs.png", "title": "Vue.js Documentation", "url": "https://v3.vuejs.org/guide/introduction.html" },
+        { "name": "Node.js + Express", "category": "Frameworks and Libraries", "image_url": "nodejs.png", "title": "NodeJS Express Documentation", "url": "https://expressjs.com/" },
+        { "name": "Bootstrap", "category": "Frameworks and Libraries", "image_url": "bootstrap.png", "title": "Bootstrap Documentation", "url": "https://getbootstrap.com/docs/5.1/getting-started/introduction/" },
+        { "name": "Pygame", "category": "Frameworks and Libraries", "image_url": "pygame.png", "title": "Pygame Documentation", "url": "https://www.pygame.org/docs/" },
+        { "name": "Sequelize", "category": "Frameworks and Libraries", "image_url": "sequelize.png", "title": "Sequelize Documentation", "url": "https://sequelize.org/master/" },
+        { "name": "Github", "category": "Development Tools", "image_url": "git.png", "title": "Github Homepage", "url": "https://github.com/" },        
+        { "name": "Visual Studio Code", "category": "Development Tools", "image_url": "vscode.png", "title": "Visual Studio Code", "url": "https://code.visualstudio.com/docs" },        
+        { "name": "Sublime Text Editor", "category": "Development Tools", "image_url": "sublime.png", "title": "Sublime Text Editor", "url": "https://www.sublimetext.com/" },
+        { "name": "Trello", "category": "Development Tools", "image_url": "trello.png", "title": "Trello", "url": "https://trello.com/en-US" },
+        { "name": "AWS", "category": "Other", "image_url": "aws.png", "title": "AWS Documentation", "url": "https://docs.aws.amazon.com/index.html?nc2=h_ql_doc_do" },
+        { "name": "Netlify", "category": "Other", "image_url": "netlify.png", "title": "Netlify Documentation", "url": "https://docs.netlify.com/" }
         
     ],
     "projects": [
 		{
 			"name": "Photo Caption Contest",
-            "start": "? 2021",
+            "start": "2021",
             "description": "A Vue.js web application...",
+            "source": "https://github.com/kellyjellykitten/sampledeploy",
+            "website": "https://nervous-lamport-50e8f7.netlify.app/",
+            "trello": "https://trello.com/b/oIFMhrzW/photo-caption-contest-website",
+            "preview_url": "canvas-pixel-color-counter.gif"
+		},
+        {
+			"name": "A-Star and Djisktras Algorithm Pathfinder",
+            "start": "2020",
+            "description": "A python ...",
+            "source": "https://github.com/kellyjellykitten/sampledeploy",
+            "website": "https://nervous-lamport-50e8f7.netlify.app/",
+            "preview_url": "canvas-pixel-color-counter.gif"
+		},
+        {
+			"name": "Connect Four",
+            "start": "2020",
+            "description": "A python game to pawn some geezers",
+            "source": "https://github.com/kellyjellykitten/sampledeploy",
+            "website": "https://nervous-lamport-50e8f7.netlify.app/",
+            "preview_url": "canvas-pixel-color-counter.gif"
+		},
+        {
+			"name": "Side Scroller Game",
+            "start": "2020",
+            "description": "A python platformer side scrolling madness incarnated",
             "source": "https://github.com/kellyjellykitten/sampledeploy",
             "website": "https://nervous-lamport-50e8f7.netlify.app/",
             "preview_url": "canvas-pixel-color-counter.gif"

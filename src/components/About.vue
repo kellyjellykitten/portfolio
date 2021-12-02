@@ -9,16 +9,16 @@
             <!-- Contact -->
             <section class="contact">
                 <p>
-                    <a class="small-icon" href="https://goo.gl/maps/NX5MMQkGjWT8okNV8"><font-awesome-icon icon="map-marker" /></a>
+                    <a class="small-icon" href="https://goo.gl/maps/NX5MMQkGjWT8okNV8" title="Location" target="_blank"><font-awesome-icon icon="map-marker" /></a>
                     <span> {{ profile.location }} </span>
                     <!-- <span>&#8226;</span> -->
                 </p>
                 <p>
-                    <a class="small-icon" href="tel:352-682-1895"><font-awesome-icon icon="phone" /></a>
+                    <a class="small-icon" href="tel:352-682-1895" title="Phone" target="_blank"><font-awesome-icon icon="phone" /></a>
                     <span> {{ profile.phone }} </span>
                 </p>
                 <p>
-                    <a class="small-icon" href="mailto:kellybackwards@gmail.com"><font-awesome-icon icon="envelope" /></a>
+                    <a class="small-icon" href="mailto:kellybackwards@gmail.com" title="Email" target="_blank"><font-awesome-icon icon="envelope" /></a>
                     <span> {{ profile.email }} </span>
                 </p>
                 <br>
@@ -30,8 +30,9 @@
             </section>
             <!-- Links -->
             <section class="links">
-                <a class="icon" :href="profile.github" title="GitHub"><font-awesome-icon :icon="['fab', 'github']" /></a>
-                <a class="icon" :href="profile.linkedin" title="LinkedIn"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+                <a class="icon" :href="profile.github" title="GitHub" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a>
+                <a class="icon" :href="profile.linkedin" title="LinkedIn" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+                <a class="icon" @click="print" title="Print"><font-awesome-icon icon="print" /></a>
             </section>
         </div>
         <!-- Printer friendly About section -->
@@ -50,7 +51,12 @@
 <script>
     export default {
         name: 'About',
-        props: ['profile']
+        props: ['profile'],
+        methods: {
+            print() {
+                window.print()
+            }
+        }
     }
 </script>
 
@@ -83,6 +89,9 @@
     @media print {
         p {
             margin: 0;
+        }
+        br {
+            display: none;
         }
         .about {
             display: none;
