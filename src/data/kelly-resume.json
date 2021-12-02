@@ -4,7 +4,7 @@
     "email": "kellybackwards@gmail.com",
     "location": "Gainesville, FL",
     "phone": "(352) 682-1895",
-    "avatar_url": "https://avatars2.githubusercontent.com/u/1208961?s=460&v=4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/60201210?s=400&u=fbe0eaa5bd9e50dc6a593d64358068b6a69f3019&v=4",
     "github": "https://github.com/kellyjellykitten",
     "linkedin": "https://www.linkedin.com/in/kellyalloyd/",
     "summary": "I am Teal'c from the planet Chulak with 100 years experience.",
@@ -74,8 +74,8 @@
 			"name": "Photo Caption Contest",
             "start": "? 2021",
             "description": "A Vue.js web application...",
-            "source": "tbd",
-            "website": "tbd",
+            "source": "https://github.com/kellyjellykitten/sampledeploy",
+            "website": "https://nervous-lamport-50e8f7.netlify.app/",
             "preview_url": "canvas-pixel-color-counter.gif"
 		}
     ]

@@ -8,15 +8,25 @@
             </h1>
             <!-- Contact -->
             <section class="contact">
-                <span>{{ profile.location }} </span>
-                <span>&#8226;</span>
-                <span> {{ profile.phone }} </span>
-                <span>&#8226;</span>
-                <span> {{ profile.email }} </span>
+                <p>
+                    <a class="small-icon" href="https://goo.gl/maps/NX5MMQkGjWT8okNV8"><font-awesome-icon icon="map-marker" /></a>
+                    <span> {{ profile.location }} </span>
+                    <!-- <span>&#8226;</span> -->
+                </p>
+                <p>
+                    <a class="small-icon" href="tel:352-682-1895"><font-awesome-icon icon="phone" /></a>
+                    <span> {{ profile.phone }} </span>
+                </p>
+                <p>
+                    <a class="small-icon" href="mailto:kellybackwards@gmail.com"><font-awesome-icon icon="envelope" /></a>
+                    <span> {{ profile.email }} </span>
+                </p>
+                <br>
             </section>
             <!-- Summary -->
             <section class="summary">
                 <p>{{ profile.summary }}</p>
+                <br>
             </section>
             <!-- Links -->
             <section class="links">
@@ -26,10 +36,12 @@
         </div>
         <!-- Printer friendly About section -->
         <div class="about--printer-friendly">
-            <h1>{{ profile.firstname }} {{ profile.lastname }}</h1>        
+            <h1>{{ profile.firstname }} {{ profile.lastname }}</h1>   
+            <p><font-awesome-icon icon="map-marker" />  {{ profile.location }}</p>     
             <p><font-awesome-icon icon="phone" />  {{ profile.phone }}</p>
             <p><font-awesome-icon icon="envelope" />  {{ profile.email }}</p>
             <p><font-awesome-icon :icon="['fab', 'github']" />  {{ profile.github }}</p>
+            <p><font-awesome-icon :icon="['fab', 'linkedin']" />  {{ profile.linkedin }}</p>
             <hr>
         </div>
     </section>
@@ -47,16 +59,26 @@
         display: none;
     }
     .icon {
-        border: 1px solid var(--main-color);
+        border: 3px solid var(--main-color);
         border-radius: 50%;
-        margin-right: 0.5rem;
-        padding: 8px 10px;
+        margin-right: 2rem;
+        padding: 10px 15px;
         color: var(--main-color);       
-        font-size: 1.25em;;
+        font-size: 2rem;
+    }
+    .small-icon {
+        margin-right: 0.5rem;
+        padding: 5px 10px;
+        color: var(--main-color);       
+        font-size: 1.25rem;
     }
     .icon:hover {
-        background-color: var(--main-color);
-        color: rgb(94, 88, 88);
+        background-color: var(--main-color-white);
+        color: rgb(240, 235, 235);
+    }
+    .small-icon:hover {
+        background-color: var(--main-color-white);
+        color: rgb(240, 235, 235);
     }
     @media print {
         p {
@@ -70,18 +92,5 @@
             text-align: left;
         }
     }
-    img {
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-  }
-  .avatar {
-    border-radius: 50%;
-    border: 7.5px solid var(--main-color-light);
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-  }
+  
 </style>
