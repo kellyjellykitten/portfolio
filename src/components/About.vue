@@ -2,10 +2,10 @@
     <section>
         <div class="about">
             <!-- Name -->
-            <h1 class="name">
+            <h2 class="name">
                 {{ profile.firstname }}
                 <span class="lastname"> {{ profile.lastname }}</span>
-            </h1>
+            </h2>
             <!-- Contact -->
             <section class="contact">
                 <p>
@@ -85,6 +85,11 @@
     .small-icon:hover {
         background-color: var(--main-color-white);
         color: rgb(240, 235, 235);
+    }
+    h2.name {
+        color: var(--main-color-light);
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
     }
     @media print {
         p {

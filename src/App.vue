@@ -5,6 +5,14 @@
         <div class="avatar">
           <img :src="data.avatar_url" alt="Profile picture" />
         </div>
+        <br>
+        <h4>Toggle Dark Mode</h4>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" @change="check" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
         <ul>
           <!-- About -->
           <li class="nav-item">
@@ -55,7 +63,18 @@ export default {
   },
   data() {
     return {
-      data: kelly
+      data: kelly,
+      darkMode: false
+    }
+  },
+  methods: {
+    check(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
     }
   }
 }
@@ -69,6 +88,12 @@ export default {
       --main-color-medium: #a6dbaf;
       --main-color-light: rgb(1, 5, 1);
       --main-color-white: rgb(42, 119, 71);
+  }
+  [data-theme="dark"] {
+      --main-color: #2b352c;
+      --main-color-medium: #516b56;
+      --main-color-light: #d4e0d4;
+      --main-color-white: #153a23;
   }
   a:hover {
     cursor: pointer;
@@ -130,9 +155,8 @@ export default {
     margin: 5px 0;
   }
   h4 {
-    color: rgb(100, 104, 122);
+    color: var(--main-color-light);
     font-size: 115%;
-    /* font-weight: 200; */
   }
   .avatar {
     border-radius: 50%;
@@ -143,7 +167,7 @@ export default {
     width: 200px;
     height: 200px;
   }
-   .date-range {
+  .date-range {
     /* color: var(--main-color); */
     font-size: 100%;
   }
@@ -154,11 +178,60 @@ export default {
     min-width: 275px;
     z-index: 1;
     box-shadow: 2px 0 10px gray;
+    text-align: center;
   }
   .link {
     display: block;
     padding: 1px 15px;
   }
+
+  .theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  .theme-switch input {
+    display:none;
+  }
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
   #app {
     /* text-align: center; */
     display: flex;
