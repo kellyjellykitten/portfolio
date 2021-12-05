@@ -103,7 +103,7 @@
             "description": "A python ...",
             "source": "https://github.com/kellyjellykitten/pathfinderalgorithm",
             "website": "https://nervous-lamport-50e8f7.netlify.app/",
-            "preview_url": "canvas-pixel-color-counter.gif"
+            "preview_url": "pathfinder.gif"
 		},
         {
 			"name": "Connect Four",
