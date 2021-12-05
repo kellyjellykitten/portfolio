@@ -12,7 +12,7 @@
         {
             "school": "University of Florida",
             "degree": "Bachelor of Arts",
-            "major": "English",
+            "major": "Major in English",
             "start": "June 2012",
             "end": "August 2016"
         }
@@ -91,17 +91,17 @@
 		{
 			"name": "Photo Caption Contest",
             "start": "2021",
-            "description": "A Vue.js web application...",
-            "source": "https://github.com/kellyjellykitten/sampledeploy",
+            "description": "A Vue.js web application utilizing Node.js Express and PostgreSQL in which users may register for an account to submit captions to various photos.",
+            "source": "https://github.com/kellyjellykitten/fino",
             "website": "https://nervous-lamport-50e8f7.netlify.app/",
             "trello": "https://trello.com/b/oIFMhrzW/photo-caption-contest-website",
-            "preview_url": "canvas-pixel-color-counter.gif"
+            "preview_url": "caption.gif"
 		},
         {
 			"name": "A-Star and Djisktras Algorithm Pathfinder",
             "start": "2020",
             "description": "A python ...",
-            "source": "https://github.com/kellyjellykitten/sampledeploy",
+            "source": "https://github.com/kellyjellykitten/pathfinderalgorithm",
             "website": "https://nervous-lamport-50e8f7.netlify.app/",
             "preview_url": "canvas-pixel-color-counter.gif"
 		},
@@ -109,7 +109,7 @@
 			"name": "Connect Four",
             "start": "2020",
             "description": "A python game to pawn some geezers",
-            "source": "https://github.com/kellyjellykitten/sampledeploy",
+            "source": "https://github.com/kellyjellykitten/connect4",
             "website": "https://nervous-lamport-50e8f7.netlify.app/",
             "preview_url": "canvas-pixel-color-counter.gif"
 		},
@@ -117,7 +117,7 @@
 			"name": "Side Scroller Game",
             "start": "2020",
             "description": "A python platformer side scrolling madness incarnated",
-            "source": "https://github.com/kellyjellykitten/sampledeploy",
+            "source": "https://github.com/kellyjellykitten/sidescroller",
             "website": "https://nervous-lamport-50e8f7.netlify.app/",
             "preview_url": "canvas-pixel-color-counter.gif"
 		}

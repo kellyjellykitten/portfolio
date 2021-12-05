@@ -31,6 +31,8 @@
             <a class="link" href="#projects">Projects</a>
           </li>
         </ul>
+        <br>
+        <a href="https://github.com/kellyjellykitten/portfolio" target="_blank" title="Source Code">Source Code</a>
       </nav>
     </header>
     <main id="resume">

@@ -3,17 +3,17 @@
         <hr>
         <h2>Projects</h2>        
         <div class="project" v-for="project in projects" :key="project.id">
-            <h3><a :href="project.source">{{ project.name }} <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
+            <h3><a :href="project.source" target="_blank">{{ project.name }} <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
             <p>{{ project.description }} <em>({{ project.start }})</em></p>
-            <a :href="project.source">Source</a>
-            <a :href="project.website">Website</a>
-            <figure v-if="project.trello">
-                <a :href="project.trello">Trello Board</a>
-            </figure>
-            <!-- <figure v-if="project.preview_url">
+            <figure v-if="project.preview_url">
                 <a :href="'assets/project_previews/' + project.preview_url"><img :src="'assets/project_previews/' + project.preview_url" :alt="project.name + 'Demo Image'"></a>
-                <figcaption><a :href="project.source">Source</a> | <a :href="project.website">Website</a></figcaption>
-            </figure> -->
+                <figcaption><a :href="project.source" target="_blank">Source</a> | 
+                <a :href="project.website" target="_blank">Website</a> 
+                <span v-if="project.trello">
+                    | <a :href="project.trello" target="_blank">Trello</a>
+                </span>
+               </figcaption>
+            </figure>
         </div>
         <!-- Printer friendly Project Section -->
         <ul class="project--printer-friendly" v-for="project in projects" :key="project.id">
