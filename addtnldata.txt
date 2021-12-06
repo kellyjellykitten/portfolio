@@ -1,0 +1,9 @@
+{
+    "name": "Side Scroller Game",
+    "start": "2020",
+    "description": "A side scroller game built using Python and Pygame.",
+    "source": "https://github.com/kellyjellykitten/sidescroller",
+    "website": "https://nervous-lamport-50e8f7.netlify.app/",
+    "youtube": "https://youtu.be/mIr4OlAwQek",
+    "preview_url": "canvas-pixel-color-counter.gif"
+}

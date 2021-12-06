@@ -112,14 +112,6 @@
             "source": "https://github.com/kellyjellykitten/connect4",
             "website": "https://nervous-lamport-50e8f7.netlify.app/",
             "preview_url": "canvas-pixel-color-counter.gif"
-		},
-        {
-			"name": "Side Scroller Game",
-            "start": "2020",
-            "description": "A python platformer side scrolling madness incarnated",
-            "source": "https://github.com/kellyjellykitten/sidescroller",
-            "website": "https://nervous-lamport-50e8f7.netlify.app/",
-            "preview_url": "canvas-pixel-color-counter.gif"
 		}
     ]
 }
