@@ -7,7 +7,7 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/60201210?s=400&u=fbe0eaa5bd9e50dc6a593d64358068b6a69f3019&v=4",
     "github": "https://github.com/kellyjellykitten",
     "linkedin": "https://www.linkedin.com/in/kellyalloyd/",
-    "summary": "I am Teal'c from the planet Chulak with 100 years experience.",
+    "summary": "After COVID-19 caused me to lose my previous job, I took the opportunity to hone in on what I want for my future and my career. I started taking coding courses through CodeAcademy and quickly realized that this was the direction I want to go in. Since then, I've taken an expanse of courses and coded my own projects. I believe I've gained the knowledge and skill to exceed the expectations of a self-taught developer.",
     "education": [
         {
             "school": "University of Florida",
@@ -91,27 +91,27 @@
 		{
 			"name": "Photo Caption Contest",
             "start": "2021",
-            "description": "A Vue.js web application utilizing Node.js Express and PostgreSQL in which users may register for an account to submit captions to various photos.",
+            "description": "A Vue.js web application utilizing Node.js Express and PostgreSQL in which users may register for an account to submit captions to various photos. Website coming soon.",
             "source": "https://github.com/kellyjellykitten/fino",
-            "website": "https://nervous-lamport-50e8f7.netlify.app/",
-            "trello": "https://trello.com/b/oIFMhrzW/photo-caption-contest-website",
+            "website": "https://kellylloyd.kiwi",
+            "trello": "https://trello.com/b/oIFMhrzW",
             "preview_url": "caption.gif"
 		},
         {
 			"name": "A-Star and Djisktras Algorithm Pathfinder",
             "start": "2020",
-            "description": "A python ...",
+            "description": "A pathfinder algorithm visualizer coded in Python using Pygame modules. The algorithms include A* and Dijkstra's. Website coming soon.",
             "source": "https://github.com/kellyjellykitten/pathfinderalgorithm",
-            "website": "https://nervous-lamport-50e8f7.netlify.app/",
+            "website": "https://kellylloyd.kiwi",
             "preview_url": "pathfinder.gif"
 		},
         {
 			"name": "Connect Four",
             "start": "2020",
-            "description": "A python game to pawn some geezers",
+            "description": "Coded in Python using Pygame modules, this game tracks and positions two player input and determines the winner in consideration of the varying win positions. Website coming soon.",
             "source": "https://github.com/kellyjellykitten/connect4",
-            "website": "https://nervous-lamport-50e8f7.netlify.app/",
-            "preview_url": "canvas-pixel-color-counter.gif"
+            "website": "https://kellylloyd.kiwi",
+            "preview_url": "connectfour.gif"
 		}
     ]
 }

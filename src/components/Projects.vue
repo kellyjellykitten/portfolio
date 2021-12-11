@@ -21,13 +21,13 @@
         </div>
         <div class="project">
             <h3><a href="https://github.com/kellyjellykitten/sidescroller" target="_blank">Side Scroller Game <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
-            <p>A side scroller game built using Python and Pygame. <em>(2020)</em></p>
+            <p>A side scroller game built using Python and Pygame that increases in speed over time while tracking player scores. <em>(2020)</em></p>
             <figure>
                 <iframe width="515" height="295" src="https://www.youtube.com/embed/mIr4OlAwQek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <figcaption>
                     <a href="https://github.com/kellyjellykitten/sidescroller" target="_blank">Source</a> |
                     <a href="https://youtu.be/mIr4OlAwQek" target="_blank">Demo Video</a> |
-                    <a href="#">Download Executable</a>
+                    <!-- <a href="#">Download Executable</a> -->
                 </figcaption>
             </figure>
         </div>
