@@ -2,14 +2,14 @@
     <section>        
         <hr>
         <h2>Education</h2>        
-        <section v-for="school in schools" :key="school.id">
+        <section v-for="school in schools" :key="school.id" class="light">
             <h3>{{ school.school }}</h3>
             <h4>{{ school.degree }}</h4>            
             <span class="date-range">{{ school.start }} - {{ school.end }}</span>
             <p>{{ school.major }}</p>
         </section>
         <h2>Skills</h2>
-        <section>
+        <section class="light">
             <div class="category-group" v-for="(skills, category) in categories" :key="category.id">
                 <h3>{{ category }}</h3>
                 <div class="skill-container">
@@ -64,6 +64,12 @@
         font-weight: normal;
         font-size: 17px;
         margin: 5px;
+    }
+    h2 {
+        color: var(--main-color-light);
+    }
+    section.light {
+        color: var(--main-color-light);
     }
     .category-group {
         display: flex;

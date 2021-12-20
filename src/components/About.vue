@@ -8,16 +8,16 @@
             </h2>
             <!-- Contact -->
             <section class="contact">
-                <p>
+                <p class="content">
                     <a class="small-icon" href="https://goo.gl/maps/NX5MMQkGjWT8okNV8" title="Location" target="_blank"><font-awesome-icon icon="map-marker" /></a>
                     <span> {{ profile.location }} </span>
                     <!-- <span>&#8226;</span> -->
                 </p>
-                <p>
+                <p class="content">
                     <a class="small-icon" href="tel:352-682-1895" title="Phone" target="_blank"><font-awesome-icon icon="phone" /></a>
                     <span> {{ profile.phone }} </span>
                 </p>
-                <p>
+                <p class="content">
                     <a class="small-icon" href="mailto:kellybackwards@gmail.com" title="Email" target="_blank"><font-awesome-icon icon="envelope" /></a>
                     <span> {{ profile.email }} </span>
                 </p>
@@ -25,7 +25,7 @@
             </section>
             <!-- Summary -->
             <section class="summary">
-                <p>{{ profile.summary }}</p>
+                <p class="content">{{ profile.summary }}</p>
                 <br>
             </section>
             <!-- Links -->
@@ -90,6 +90,9 @@
         color: var(--main-color-light);
         margin: 0 auto;
         margin-bottom: 0.5rem;
+    }
+    p.content {
+        color: var(--main-color-light);
     }
     @media print {
         p {

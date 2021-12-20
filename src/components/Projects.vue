@@ -31,6 +31,17 @@
                 </figcaption>
             </figure>
         </div>
+        <div class="project">
+            <h3><a href="https://github.com/kellyjellykitten/connect4" target="_blank">Connect Four <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
+            <p>Coded in Python using Pygame modules, this game tracks and positions two player input and determines the winner in consideration of the varying win positions. <em>(2020)</em></p>
+            <figure>
+                <img src="https://media.giphy.com/media/8viErrOZhI4UQS5Qlb/giphy.gif" alt="Connect Four Demo Image">
+                <figcaption>
+                    <a href="https://github.com/kellyjellykitten/connect4" target="_blank">Source</a> |
+                    <!--<a href="#">Download Executable</a>-->
+                </figcaption>
+            </figure>
+        </div>
         <!-- Printer friendly Project Section -->
         <ul class="project--printer-friendly" v-for="project in projects" :key="project.id">
             <li>
@@ -56,6 +67,7 @@
     h3 a {
         text-decoration: none;
         color: black;
+        color: var(--main-color-light);
     }    
     img {                
         width: auto;
@@ -69,6 +81,7 @@
         flex-direction: column;
         margin-top: 1rem;
         margin-bottom: 2rem;
+        color: var(--main-color-light);
     }
     .project--printer-friendly {
         display: none;

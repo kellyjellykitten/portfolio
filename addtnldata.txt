@@ -7,3 +7,11 @@
     "youtube": "https://youtu.be/mIr4OlAwQek",
     "preview_url": "canvas-pixel-color-counter.gif"
 }
+{
+    "name": "Connect Four",
+    "start": "2020",
+    "description": "Coded in Python using Pygame modules, this game tracks and positions two player input and determines the winner in consideration of the varying win positions. Website coming soon.",
+    "source": "https://github.com/kellyjellykitten/connect4",
+    "website": "https://kellylloyd.kiwi",
+    "preview_url": "connectfour.gif"
+}

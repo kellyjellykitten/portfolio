@@ -4,7 +4,7 @@
      <h2>Experience</h2>
      <section class="experience-container" v-for="exp in experience" :key="exp.id">
        <h3>{{ exp.company }}</h3>
-       <section v-for="role in exp.roles" :key="role.id">
+       <section v-for="role in exp.roles" :key="role.id" class="light">
          <h4>{{ role.job }}</h4>
          <span>{{ role.start }} - {{ role.end }}</span>
          <ul>
@@ -27,5 +27,14 @@ export default {
 <style scoped>
     .experience-container {
         margin-bottom: 2rem;
-    }    
+    }
+    h2 {
+      color: var(--main-color-light);
+    }   
+    h3 {
+      color: var(--main-color-light);
+    }
+    .light {
+      color: var(--main-color-light);
+    }   
 </style>

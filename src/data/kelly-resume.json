@@ -7,7 +7,7 @@
     "avatar_url": "https://avatars.githubusercontent.com/u/60201210?s=400&u=fbe0eaa5bd9e50dc6a593d64358068b6a69f3019&v=4",
     "github": "https://github.com/kellyjellykitten",
     "linkedin": "https://www.linkedin.com/in/kellyalloyd/",
-    "summary": "After COVID-19 caused me to lose my previous job, I took the opportunity to hone in on what I want for my future and my career. I started taking coding courses through CodeAcademy and quickly realized that this was the direction I want to go in. Since then, I've taken an expanse of courses and coded my own projects. I believe I've gained the knowledge and skill to exceed the expectations of a self-taught developer.",
+    "summary": "After spending years working in real estate and law firm offices, I felt that my skills were under-utilized and my work days left me feeling unfulfilled. Exploring other outlets, I soon found that coding gave me the sense of self-satisfaction I was looking for. Over the past year and a half, I devoted my full time to studying programming languages and software development. I have applied the knowledge I've acquired through online courses to create a variety of projects that showcase my skills as a self-taught developer, and hope to utilize these skills at a full-time position for a company looking for someone with self-motivation and drive!",
     "education": [
         {
             "school": "University of Florida",
@@ -28,8 +28,7 @@
                     "tasks": [
                         "Opened files for each new transaction, cash or finance, ordering both title and municipal lien searches.",
                         "Worked as part of a team consisting of both in-person co-workers and remote co-workers.",
-                        "Examined title of  subject properties and worked on clearing every closing requirement needed for each, including titles to properties in probate, properties with open permits/city liens, and other complex situations.",
-                        "Assisted and facilitated residential real estate closings, including e-closings."
+                        "Examined title of  subject properties and worked on clearing every closing requirement needed for each, including probate and open permits/municipal liens."
                     ]
                 }
             ]
@@ -42,9 +41,8 @@
                     "start": "Summer 2018",
                     "end": "Fall 2019",
                     "tasks": [
-                        "Designed and implemented a company workflow that greatly increased efficiency in the handling of files. ",
-                        "Managed and maintained said workflow and was instrumental in the day-to-day operations of the firm.", 
-                        "Reviewed real estate closing contracts and created the file in our software, including ordering title search.",
+                        "Designed, implemented, and maintained a company workflow using Trello that greatly increased efficiency in the handling of files. ",
+                        "Reviewed real estate closing contracts and created new files in DoubleTime software, including ordering the title search.",
                         "Cleared title deficiencies, including ordering estoppel letters, payoff statements, and surveys.",
                         "Recorded warranty deeds, affidavits, mortgages, etc. in the Official Records through e-file."
                     ]
@@ -59,7 +57,6 @@
                     "start": "Summer 2017",
                     "end": "Summer 2018",
                     "tasks": [
-                        "Executed title work pertaining to real estate closings, including ordering title and clearing title deficiencies.",
                         "Collaborated with mortgage lenders to reconcile final settlement statements for real estate closings.",
                         "Maintained consistent communication with clients to ensure excellent customer service.",
                         "Processed screening and intake of bankruptcy clients and started their file in BestCase software.",
@@ -91,27 +88,19 @@
 		{
 			"name": "Photo Caption Contest",
             "start": "2021",
-            "description": "A Vue.js web application utilizing Node.js Express and PostgreSQL in which users may register for an account to submit captions to various photos. Website coming soon.",
+            "description": "A Vue.js web application utilizing Node.js + Express, PostgreSQL, and Bootstrap in which users may register for an account to submit captions to various photos. WEBSITE COMING SOON.",
             "source": "https://github.com/kellyjellykitten/fino",
             "website": "https://kellylloyd.kiwi",
             "trello": "https://trello.com/b/oIFMhrzW",
             "preview_url": "caption.gif"
 		},
         {
-			"name": "A-Star and Djisktras Algorithm Pathfinder",
-            "start": "2020",
-            "description": "A pathfinder algorithm visualizer coded in Python using Pygame modules. The algorithms include A* and Dijkstra's. Website coming soon.",
-            "source": "https://github.com/kellyjellykitten/pathfinderalgorithm",
-            "website": "https://kellylloyd.kiwi",
+			"name": "Pathfinding Visualizer",
+            "start": "2020/2021",
+            "description": "Originally built using Python and Pygame, this is a pathfinding algorithm visualizer re-built with Vue.js and CSS. The algorithms include Breadth First Search, Depth First Search, and Bellman-Ford Algorithm. WORK IN PROGRESS.",
+            "source": "https://github.com/kellyjellykitten/algorithmvisualizer/tree/modaltest2",
+            "website": "https://pathfindingvisual.netlify.app/",
             "preview_url": "pathfinder.gif"
-		},
-        {
-			"name": "Connect Four",
-            "start": "2020",
-            "description": "Coded in Python using Pygame modules, this game tracks and positions two player input and determines the winner in consideration of the varying win positions. Website coming soon.",
-            "source": "https://github.com/kellyjellykitten/connect4",
-            "website": "https://kellylloyd.kiwi",
-            "preview_url": "connectfour.gif"
 		}
     ]
 }
