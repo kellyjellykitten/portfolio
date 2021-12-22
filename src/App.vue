@@ -2,8 +2,9 @@
   <div id="app">
     <header>
       <nav class="fullsize-navbar">
-        <div class="avatar">
-          <img :src="data.avatar_url" alt="Profile picture" />
+        <div class="avatar" @click="toggleEclipse">
+          <img v-if="!eclipseMode" :src="data.avatar_url" alt="Profile picture" title="Click to see my cat!" />
+          <img v-if="eclipseMode" src="https://i.ibb.co/gdX0QT6/avatar.jpg" alt="My cat, Eclipse" title="Click again to go back to my picture!" />
         </div>
         <br>
         <h4>Toggle Dark Mode</h4>
@@ -66,7 +67,8 @@ export default {
   data() {
     return {
       data: kelly,
-      darkMode: false
+      darkMode: false,
+      eclipseMode: false
     }
   },
   methods: {
@@ -77,6 +79,9 @@ export default {
       else {
         document.documentElement.setAttribute('data-theme', 'light');
       }
+    },
+    toggleEclipse() {
+      this.eclipseMode = !this.eclipseMode
     }
   }
 }
