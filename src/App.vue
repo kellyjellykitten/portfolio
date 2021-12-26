@@ -1,6 +1,12 @@
 <template>
   <div id="app">
     <header>
+      <nav class="small-navbar">
+        
+        <div id="navigation-icon" @click="checkMobile">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
       <nav class="fullsize-navbar">
         <div class="avatar" @click="toggleEclipse">
           <img v-if="!eclipseMode" :src="data.avatar_url" alt="Profile picture" title="Click to see my cat!" />
@@ -82,6 +88,9 @@ export default {
     },
     toggleEclipse() {
       this.eclipseMode = !this.eclipseMode
+    },
+    checkMobile() {
+      console.log("clicked nav bars")
     }
   }
 }
@@ -89,6 +98,7 @@ export default {
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+  @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
 
   :root {
       --main-color: #f3f3f3;
@@ -114,6 +124,7 @@ export default {
     margin: 0;
     background-attachment: fixed;
     font-family: 'Rubik', sans-serif;
+    overflow: hidden;
   }
   header {
     display: flex;
@@ -179,14 +190,24 @@ export default {
     font-size: 100%;
   }
   .fullsize-navbar  {
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     padding-top: 2rem;
-    position: sticky;
+    
     min-width: 275px;
     z-index: 1;
     box-shadow: 2px 0 10px gray;
     text-align: center;
   }
+  .small-navbar {
+    display: none;
+    margin: 0;
+    padding-left: 30px;
+    color: var(--main-color-light);
+  }
+  .small-navbar p {
+    width: 100wv;
+  }
+
   .link {
     display: block;
     padding: 1px 15px;
@@ -240,7 +261,6 @@ export default {
   }
 
   #app {
-    /* text-align: center; */
     display: flex;
     height: 100vh;
   }
@@ -252,6 +272,42 @@ export default {
     overflow-y: auto;
     flex: 1;
   }
+
+  @media screen and (max-width: 600px) {
+    header {
+      justify-content: left;
+    }
+    hr {
+      margin: 50px;
+      color: lightgrey;
+      display: block;
+    }
+    nav {
+      margin-top: 5px;
+    }
+    .fullsize-navbar {
+      display: none;
+      box-shadow: none;
+    }
+    .small-navbar {
+      display: inline-block;
+      width: 100%;
+      z-index: 1;      
+      box-shadow: 0 2px 10px gray;
+    }
+    #navigation-icon {
+      padding: 10px 10px 10px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    #app {
+      flex-direction: column;
+    }
+    #resume {
+      padding: 30px;
+    }
+  }
+
   @media print {    
     header, nav, footer {
       display: none;

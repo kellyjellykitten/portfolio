@@ -55,6 +55,12 @@
                 <p>Source: <a href="https://github.com/kellyjellykitten/sidescroller">https://github.com/kellyjellykitten/sidescroller</a></p>
             </li>
         </ul>
+        <ul class="project--printer-friendly">
+            <li>
+                <p><strong>Connect Four</strong> (2020)</p>
+                <p>Source: <a href="https://github.com/kellyjellykitten/connect4">https://github.com/kellyjellykitten/connect4</a></p>
+            </li>
+        </ul>
     </section>
 </template>
 <script>
@@ -98,6 +104,9 @@
     @media print {
         p, a {
             margin: 0;
+        }
+        h2 {
+            font-size: 1rem;
         }
         .project {
             display: none; 

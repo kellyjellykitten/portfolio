@@ -121,5 +121,8 @@
         .category-group-skill {
             margin-left: 0.25rem;
         }
+        h2 {
+            font-size: 1rem;
+        }
     }
 </style>
