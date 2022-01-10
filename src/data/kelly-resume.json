@@ -86,15 +86,6 @@
         
     ],
     "projects": [
-		{
-			"name": "Photo Caption Contest",
-            "start": "2021",
-            "description": "A Vue.js web application utilizing Node.js + Express, PostgreSQL, and Bootstrap in which users may register for an account to submit captions to various photos. WEBSITE COMING SOON.",
-            "source": "https://github.com/kellyjellykitten/fino",
-            "website": "https://kellylloyd.kiwi",
-            "trello": "https://trello.com/b/oIFMhrzW",
-            "preview_url": "caption.gif"
-		},
         {
 			"name": "Pathfinding Visualizer",
             "start": "2020/2021",

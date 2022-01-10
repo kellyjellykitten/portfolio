@@ -2,6 +2,18 @@
     <section>
         <hr>
         <h2>Projects</h2>        
+        <div class="project">
+            <h3><a href="https://github.com/kellyjellykitten/fino" target="_blank">Photo Caption Contest <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
+            <p>A Vue.js web application utilizing Node.js + Express, PostgreSQL, and Bootstrap in which users may register for an account to submit captions to various photos. WEBSITE COMING SOON. <em>(2021)</em></p>
+            <figure>
+                <iframe width="515" height="295" src="https://www.youtube.com/embed/3PPVcqsIKdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>
+                    <a href="https://github.com/kellyjellykitten/fino" target="_blank">Source</a> |
+                    <a href="https://youtu.be/3PPVcqsIKdo" target="_blank">Demo Video</a> |
+                    <a href="https://trello.com/b/oIFMhrzW" target="_blank">Trello Board</a>
+                </figcaption>
+            </figure>
+        </div>
         <div class="project" v-for="project in projects" :key="project.id">
             <h3><a :href="project.source" target="_blank">{{ project.name }} <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
             <p>{{ project.description }} <em>({{ project.start }})</em></p>
@@ -10,12 +22,7 @@
                 <figcaption>
                 <a :href="project.source" target="_blank">Source</a> | 
                 <a :href="project.website" target="_blank">Website</a> 
-                <span v-if="project.trello">
-                    | <a :href="project.trello" target="_blank">Trello</a>
-                </span>
-                <span v-if="project.youtube">
-                    | <a :href="project.youtube" target="_blank">Demo Video</a>
-                </span>
+                
                </figcaption>
             </figure>
         </div>
