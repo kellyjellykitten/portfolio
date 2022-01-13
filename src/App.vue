@@ -1,11 +1,30 @@
 <template>
   <div id="app">
     <header>
-      <nav class="small-navbar">
-        
-        <div id="navigation-icon" @click="checkMobile">
-          <i class="fas fa-bars"></i>
+      <nav class="small-navbar" v-show="mobile">
+        <div id="navigation-icon">
+          <i @click="toggleMobileNav" v-show="mobile" class="fas fa-bars"></i>
         </div>
+        <transition name="mobile-nav">
+          <ul v-show="mobileNav" class="dropdown-nav">
+            <!-- About -->
+            <li class="nav-item">
+              <a class="link" href="#about">About</a>
+            </li>
+            <!-- Experience -->
+            <li class="nav-item">
+              <a class="link" href="#experience">Experience</a>
+            </li>
+            <!-- Education -->
+            <li class="nav-item">
+              <a class="link" href="#education">Education &amp; Skills</a>
+            </li>
+            <!-- Projects -->
+            <li class="nav-item">
+              <a class="link" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </transition>
       </nav>
       <nav class="fullsize-navbar">
         <div class="avatar" @click="toggleEclipse">
@@ -42,6 +61,11 @@
         <a href="https://github.com/kellyjellykitten/portfolio" target="_blank" title="Source Code">Source Code</a>
       </nav>
     </header>
+    <div class="small-avatar" @click="toggleEclipse">
+        <img v-if="!eclipseMode" :src="data.avatar_url" alt="Profile picture" title="Click to see my cat!" />
+        <img v-if="eclipseMode" src="https://i.ibb.co/gdX0QT6/avatar.jpg" alt="My cat, Eclipse" title="Click again to go back to my picture!" />
+    </div>
+
     <main id="resume">
       <About id="about" :profile="data" />
       <br>
@@ -74,8 +98,15 @@ export default {
     return {
       data: kelly,
       darkMode: false,
-      eclipseMode: false
+      eclipseMode: false,
+      mobile: null,
+      mobileNav: null,
+      windowWidth: null
     }
+  },
+  created() {
+    window.addEventListener('resize', this.checkScreen())
+    this.checkScreen()
   },
   methods: {
     check(e) {
@@ -89,8 +120,18 @@ export default {
     toggleEclipse() {
       this.eclipseMode = !this.eclipseMode
     },
-    checkMobile() {
-      console.log("clicked nav bars")
+    toggleMobileNav() {
+      this.mobileNav = !this.mobileNav
+    },
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      if (this.windowWidth <= 750) {
+        this.mobile = true
+        return
+      }
+      this.mobile = false
+      this.mobileNav = false
+      return
     }
   }
 }
@@ -207,12 +248,16 @@ export default {
   .small-navbar p {
     width: 100wv;
   }
-
+  .small-avatar {
+    display: none;
+  }
   .link {
     display: block;
     padding: 1px 15px;
   }
-
+  .toggle-mobile {
+    display: none;
+  }
   .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -259,7 +304,12 @@ export default {
   .slider.round:before {
     border-radius: 50%;
   }
-
+  .theme-switch-wrapper-mobile {
+    display: none;
+  }
+  .theme-switch-mobile {
+    display: none
+  }
   #app {
     display: flex;
     height: 100vh;
@@ -285,6 +335,12 @@ export default {
     nav {
       margin-top: 5px;
     }
+    h4 { 
+      color: var(--main-color-light);
+      font-size: 95%;
+      text-align: center;
+      margin-top: 10px;
+    }
     .fullsize-navbar {
       display: none;
       box-shadow: none;
@@ -295,9 +351,21 @@ export default {
       z-index: 1;      
       box-shadow: 0 2px 10px gray;
     }
+    .small-avatar {
+      display: inline-block;
+      border-radius: 50%;
+      border: 5px solid var(--main-color-light);
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      margin-top: 15px;
+    }
     #navigation-icon {
       padding: 10px 10px 10px;
       margin-right: 10px;
+      font-size: 150%;
       cursor: pointer;
     }
     #app {
