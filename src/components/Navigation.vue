@@ -36,11 +36,11 @@
                 <a href="https://github.com/kellyjellykitten/portfolio" target="_blank" title="Source Code">Source Code</a>
             </ul>
             <!-- Mobile -->
-            <div id="icon">
+            <div class="nav-icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="fas fa-bars" :class="{ 'icon-active': mobileNav }"></i>
             </div>
             <transition name="mobile-nav">
-                <ul v-show="mobileNav" id="dropdown-nav">
+                <ul v-show="mobileNav" class="dropdown-nav">
                     <!-- About -->
                     <li class="nav-item">
                         <a class="link" href="#about">About</a>
@@ -123,85 +123,120 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 header {
     display: flex;
     justify-content: center;
+    transition: 0.5s ease all;
+    
+
+    nav {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex;
+        text-align: center;
+        transition: 0.5s ease all;
+        padding: 0;
+        @media (min-width: 1140px) {
+            max-width: 1140px;
+        }
+
+        ul {
+            
+            text-decoration: none;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: var(--main-color-light);
+            margin: 35px;
+            
+        }
+        li a:active {
+            color: white;
+        }
+        li a:hover {
+            color: var(--main-color-white);
+        }
+
+        .link {
+            display: block;
+            padding: 1px 15px;
+        }
+
+        .navigation  {
+            padding-top: 2rem;
+            min-width: 300px;
+            z-index: 1;
+            box-shadow: 5px 0 12px gray;
+            text-align: center;
+            min-height: 100%;
+            
+        }
+
+        .nav-icon {
+            padding: 10px 10px 10px;
+            align-items: center;
+            height: 100%;
+            position: relative;
+
+            i {
+                cursor: pointer;
+                font-size: 24px;
+                transition: 0.8s ease all;
+            }
+        }
+        
+        .icon-active {
+            transform: rotate(180deg)
+        }
+
+        .dropdown-nav {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 250px;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            color: var(--main-color-light);
+            z-index: 1;      
+            box-shadow: 0 2px 10px gray;
+
+            li {
+                margin-left: 0;
+                .link {
+                    color: #000;
+                }
+            }
+        }
+
+        .mobile-nav-enter-active,
+        .mobile-nav-leave-active {
+            transition: 1s ease all;
+        }
+        .mobile-nav-enter-from,
+        .mobile-nav-leave-to {
+            transform: translateX(-250px);
+        }
+        .mobile-nav-enter-to {
+            transform: translateX(0);
+        }
+    }  
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex;
-    text-align: center;
-    padding: 0;
-}
-nav li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: var(--main-color-light);
-    margin: 20px;
-}
-nav li a:active {
-    color: white;
-}
-nav li a:hover {
-    color: var(--main-color-white);
-}
-.link {
-    display: block;
-    padding: 1px 15px;
-}
-.navigation  {
-    padding-top: 2rem;
-    min-width: 300px;
-    z-index: 1;
-    box-shadow: 5px 0 12px gray;
-    text-align: center;
-    min-height: 100%;
-  }
-#icon {
-    padding: 10px 10px 10px;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-    font-size: 24px;
-    transition: 0.8s ease all;
-}
-.icon-active {
-    transform: rotate(180deg)
-}
-#dropdown-nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 250px;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    color: var(--main-color-light);
-    z-index: 1;      
-    box-shadow: 0 2px 10px gray;
-}
-#dropdown-nav li {
-    color: red;
-}
-.mobile-nav-enter-active,
-.mobile-nav-leave-active {
-    transition: 1s ease all;
-}
-.mobile-nav-enter-from,
-.mobile-nav-leave-to {
-    transform: translateX(-250px);
-}
-.mobile-nav-enter-to {
-    transform: translateX(0);
-}
 .scrolled-nav {
     background-color: radial-gradient(circle at bottom, var(--main-color-medium), var(--main-color));
     box-shadow: 5px 0 12px gray;
+
+    nav {
+        padding: 8px 0;
+    }
 }
 </style>
 

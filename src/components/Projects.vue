@@ -4,7 +4,7 @@
         <h2>Projects</h2>        
         <div class="project">
             <h3><a href="https://github.com/kellyjellykitten/fino" target="_blank">Photo Caption Contest <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
-            <p>A Vue.js web application utilizing Node.js + Express, PostgreSQL, and Bootstrap in which users may register for an account to submit captions to various photos. WEBSITE COMING SOON. <em>(2021)</em></p>
+            <p>A Vue.js web application utilizing Node.js + Express, PostgreSQL, and Bootstrap in which users may register for an account to submit captions to various photos. <em>(2021)</em></p>
             <figure>
                 <iframe width="515" height="295" src="https://www.youtube.com/embed/3PPVcqsIKdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <figcaption>
