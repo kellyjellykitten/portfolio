@@ -454,3 +454,68 @@ header {
     }
 }
 </style>
+
+
+
+<!-- <header>
+      
+      <nav class="small-navbar" v-show="mobile">
+        <div id="navigation-icon">
+          <i @click="toggleMobileNav" v-show="mobile" class="fas fa-bars"></i>
+        </div>
+        <transition name="mobile-nav">
+          <ul v-show="mobileNav" class="dropdown-nav">
+            About
+            <li class="nav-item">
+              <a class="link" href="#about">About</a>
+            </li>
+            Experience
+            <li class="nav-item">
+              <a class="link" href="#experience">Experience</a>
+            </li>
+            Education
+            <li class="nav-item">
+              <a class="link" href="#education">Education &amp; Skills</a>
+            </li>
+            Projects
+            <li class="nav-item">
+              <a class="link" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </transition>
+      </nav>
+      <nav class="fullsize-navbar">
+        <div class="avatar" @click="toggleEclipse">
+          <img v-if="!eclipseMode" :src="data.avatar_url" alt="Profile picture" title="Click to see my cat!" />
+          <img v-if="eclipseMode" src="https://i.ibb.co/gdX0QT6/avatar.jpg" alt="My cat, Eclipse" title="Click again to go back to my picture!" />
+        </div>
+        <br>
+        <h4>Toggle Dark Mode</h4>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" @change="check" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+        <ul>
+          About
+          <li class="nav-item">
+            <a class="link" href="#about">About</a>
+          </li>
+          Experience
+          <li class="nav-item">
+            <a class="link" href="#experience">Experience</a>
+          </li>
+          Education
+          <li class="nav-item">
+            <a class="link" href="#education">Education &amp; Skills</a>
+          </li>
+          Projects
+          <li class="nav-item">
+            <a class="link" href="#projects">Projects</a>
+          </li>
+        </ul>
+        <br>
+        <a href="https://github.com/kellyjellykitten/portfolio" target="_blank" title="Source Code">Source Code</a>
+      </nav>
+    </header> -->

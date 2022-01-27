@@ -227,6 +227,8 @@ header {
         .mobile-nav-enter-to {
             transform: translateX(0);
         }
+        
+        
     }  
 }
 
@@ -238,6 +240,12 @@ header {
         padding: 8px 0;
     }
 }
+@media print {
+    header, nav {
+        display: none;
+    }
+}
+
 </style>
 
 
