@@ -1,7 +1,18 @@
 <template>
     <section>
         <hr>
-        <h2>Projects</h2>        
+        <h2>Projects</h2>
+        <div class="project">
+            <h3><a href="http://wordingo.kellylloyd.kiwi/" target="_blank">Wordingo <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
+            <p>A Wordle clone built with Vue.js, Vite, and Tailwind CSS. <em>(2022)</em></p>
+            <figure>
+                <img src="https://media.giphy.com/media/krUBihK8QinVNsiVtU/giphy.gif" alt="Wordingo Demo Image">
+                <figcaption>
+                    <a href="https://github.com/kellyjellykitten/wordingo" target="_blank">Source</a> |
+                    <a href="http://wordingo.kellylloyd.kiwi/" target="_blank">Website</a>
+                </figcaption>
+            </figure>
+        </div>        
         <div class="project">
             <h3><a href="https://github.com/kellyjellykitten/fino" target="_blank">Photo Caption Contest <font-awesome-icon :icon="['fas', 'external-link-alt']" /></a></h3>
             <p>A Vue.js web application utilizing Node.js + Express, PostgreSQL, and Bootstrap in which users may register for an account to submit captions to various photos. <em>(2021)</em></p>
@@ -50,10 +61,22 @@
             </figure>
         </div>
         <!-- Printer friendly Project Section -->
-        <ul class="project--printer-friendly" v-for="project in projects" :key="project.id">
+         <ul class="project--printer-friendly">
             <li>
-                <p><strong>{{ project.name }}</strong> ({{ project.start }}) - {{ project.description }}</p>
-                <p>Source: <a :href="project.source">{{ project.source }}</a></p>
+                <p><strong>Wordingo</strong> (2022)</p>
+                <p>Source: <a href="https://github.com/kellyjellykitten/wordingo">https://github.com/kellyjellykitten/wordingo</a></p>
+            </li>
+        </ul>
+        <ul class="project--printer-friendly">
+            <li>
+                <p><strong>Photo Caption Contest</strong> (2021)</p>
+                <p>Source: <a href="https://github.com/kellyjellykitten/fino">https://github.com/kellyjellykitten/fino</a></p>
+            </li>
+        </ul>
+        <ul class="project--printer-friendly">
+            <li>
+                <p><strong>Pathfinding Visualizer</strong> (2021)</p>
+                <p>Source: <a href="https://github.com/kellyjellykitten/algorithmvisualizer/tree/modaltest2">https://github.com/kellyjellykitten/algorithmvisualizer</a></p>
             </li>
         </ul>
         <ul class="project--printer-friendly">

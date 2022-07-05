@@ -82,14 +82,16 @@
         { "name": "Sublime Text Editor", "category": "Development Tools", "image_url": "sublime.png", "title": "Sublime Text Editor", "url": "https://www.sublimetext.com/" },
         { "name": "Trello", "category": "Development Tools", "image_url": "trello.png", "title": "Trello", "url": "https://trello.com/en-US" },
         { "name": "AWS", "category": "Other", "image_url": "aws.png", "title": "AWS Documentation", "url": "https://docs.aws.amazon.com/index.html?nc2=h_ql_doc_do" },
-        { "name": "Netlify", "category": "Other", "image_url": "netlify.png", "title": "Netlify Documentation", "url": "https://docs.netlify.com/" }
+        { "name": "Netlify", "category": "Other", "image_url": "netlify.png", "title": "Netlify Documentation", "url": "https://docs.netlify.com/" },
+        { "name": "Tailwind CSS", "category": "Frameworks and Libraries", "image_url": "tailwind.png", "title": "Tailwind Documentation", "url": "https://tailwindcss.com/docs/installation" },
+        { "name": "Vite", "category": "Frameworks and Libraries", "image_url": "vite.png", "title": "Vite Documentation", "url": "https://vitejs.dev/guide/" }
         
     ],
     "projects": [
         {
 			"name": "Pathfinding Visualizer",
             "start": "2020/2021",
-            "description": "Originally built using Python and Pygame, this is a pathfinding algorithm visualizer re-built with Vue.js and CSS. The algorithms include Breadth First Search, Depth First Search, and Bellman-Ford Algorithm. WORK IN PROGRESS.",
+            "description": "Originally built using Python and Pygame, this is a pathfinding algorithm visualizer re-built with Vue.js and CSS. The algorithms include Breadth First Search, Depth First Search, and Bellman-Ford Algorithm.",
             "source": "https://github.com/kellyjellykitten/algorithmvisualizer/tree/modaltest2",
             "website": "https://pathfindingvisual.netlify.app/",
             "preview_url": "pathfinder.gif"
