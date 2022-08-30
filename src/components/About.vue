@@ -25,7 +25,7 @@
             </section>
             <!-- Summary -->
             <section class="summary">
-                <p class="content">{{ profile.summary }}</p>
+                <p class="summary">{{ profile.summary }}</p>
                 <br>
             </section>
             <!-- Links -->
@@ -93,6 +93,10 @@
     }
     p.content {
         color: var(--main-color-light);
+    }
+    p.summary {
+        color: var(--main-color-light);
+        max-width: 100ch;
     }
     @media print {
         p {
